@@ -1,34 +1,25 @@
-<rdf:RDF
-      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-      xmlns:admin="http://webns.net/mvcb/">
-<foaf:PersonalProfileDocument rdf:about="">
-  <foaf:maker rdf:resource="#me"/>
-  <foaf:primaryTopic rdf:resource="#me"/>
-  <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
-  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
-</foaf:PersonalProfileDocument>
-<foaf:Person rdf:ID="me">
-<foaf:name>Monika Mateska</foaf:name>
-<foaf:givenname>Monika</foaf:givenname>
-<foaf:family_name>Mateska</foaf:family_name>
-<foaf:nick>Moni</foaf:nick>
-<foaf:mbox_sha1sum>494a76d99981cd06d7494bbf9c5043bd4c5b4550</foaf:mbox_sha1sum>
-<foaf:homepage rdf:resource="https://www.linkedin.com/in/monika-mateska-54796b185/"/>
-<foaf:depiction rdf:resource="https://media-exp1.licdn.com/dms/image/C4D03AQFwK8PEwj7a2A/profile-displayphoto-shrink_800_800/0/1599316993338?e=1614211200&v=beta&t=tohakmnnUuAO9F1H4BlNZ_vti9StECoQN_SUW2Um5-8"/>
-<foaf:phone rdf:resource="tel:071823552"/>
-<foaf:workplaceHomepage rdf:resource="https://www.netcetera.com/home.html"/>
-<foaf:workInfoHomepage rdf:resource="https://jobs.netcetera.com/job-vacancies/ios-engineer/f9e4d59c-2ec3-42e7-95cf-358700403c0c"/>
-<foaf:schoolHomepage rdf:resource="https://www.finki.ukim.mk/en"/>
-<foaf:knows>
-<foaf:Person>
-<foaf:name>Marija Popovic</foaf:name>
-<foaf:mbox_sha1sum>d5bf6868aa3ff3afbd8cbdb6c3c007d6b5f9c109</foaf:mbox_sha1sum>
-<rdfs:seeAlso rdf:resource="https://www.linkedin.com/in/marija-popovic-9312191b6/"/></foaf:Person></foaf:knows>
-<foaf:knows>
-<foaf:Person>
-<foaf:name>Filip Petrushevski</foaf:name>
-<foaf:mbox_sha1sum>353560d1ba114e62a635d09d1b010a6d0d0d6340</foaf:mbox_sha1sum>
-<rdfs:seeAlso rdf:resource="https://www.linkedin.com/in/petrushevski-filip/"/></foaf:Person></foaf:knows></foaf:Person>
-</rdf:RDF>
+@prefix admin: <http://webns.net/mvcb/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://raw.githubusercontent.com/MonikaMateska/WebBasedSystems/main/foaf.ttl> a foaf:PersonalProfileDocument ;
+    admin:errorReportsTo <mailto:leigh@ldodds.com> ;
+    admin:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+    foaf:maker <#me> ;
+    foaf:primaryTopic <#me> .
+
+<#me> a foaf:Person ;
+    foaf:family_name "Mateska" ;
+    foaf:givenname "Monika" ;
+    foaf:homepage <https://www.linkedin.com/in/monika-mateska-54796b185/> ;
+    foaf:knows [ a foaf:Person ;
+            rdfs:seeAlso <https://www.dropbox.com/s/bakixp7xx3tocqs/foaf.ttl?dl=1> ;
+            foaf:mbox_sha1sum "0e4b3c17f784b84a9e345bae865f8f9e1a64e8d9" ;
+            foaf:name "Marija Popovic" ] ;
+    foaf:mbox_sha1sum "8834afe6cc9409e053f67eb92ce3d75d2e7fc8a5" ;
+    foaf:name "Monika Mateska" ;
+    foaf:nick "Moni" ;
+    foaf:phone <tel:071823552> ;
+    foaf:schoolHomepage <https://www.finki.ukim.mk/en> ;
+    foaf:workInfoHomepage <https://jobs.netcetera.com/job-vacancies/ios-engineer/f9e4d59c-2ec3-42e7-95cf-358700403c0c> ;
+    foaf:workplaceHomepage <https://www.netcetera.com/home.html> .
