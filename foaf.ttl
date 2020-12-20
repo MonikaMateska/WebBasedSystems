@@ -8,7 +8,7 @@
     foaf:maker <#me> ;
     foaf:primaryTopic <#me> .
 
-<#me> a foaf:Person ;
+<https://raw.githubusercontent.com/MonikaMateska/WebBasedSystems/main/foaf.ttl#me> a foaf:Person ;
     foaf:family_name "Mateska" ;
     foaf:givenname "Monika" ;
     foaf:homepage <https://www.linkedin.com/in/monika-mateska-54796b185/> ;
